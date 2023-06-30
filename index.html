@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Parkour?</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/js/main.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/48728bdfb2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="absolute left-1 top-1">
+    <div id="systemStatWindow"></div>
+    <br/>
+    <div id="gameStatWindow" class="text-white font-mono text-sm"></div>
+</div>
+<div id="menuPanel" class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+    <button class="btn text-2xl hover:font-bold font-mono" id="startButton">Click to Start</button>
+</div>
+<div class="absolute bottom-1 right-2 text-white font-mono">
+    Future Plans: Ammo.JS
+</div>
+<div class="absolute bottom-1 left-2 text-white font-mono">
+    Three.JS + Ray Cast
+</div>
+<div class="absolute bottom-1 left-1/2 -translate-x-1/2 text-white font-mono">
+    Copyright © 2022-2023 by <a href="https://kerrycao.com" class="underline">Kerry Cao</a> | All Rights Reserved
+</div>
+<div class="absolute top-1 right-2">
+    <i id="debugButton" class="fa-solid fa-gear fa-xl hover:rotate-90 transition duration-500 hover:cursor-pointer"></i>
+</div>
+<div id="pausePrompt" class="absolute top-1 left-1/2 -translate-x-1/2 text-white font-mono" style="display: none">
+    Click ESC to pause
+</div>
+</body>
+<footer style="display: none">
+    "LOWPOLY | FPS | TDM | GAME | MAP" (https://skfb.ly/oGypy) by Space_One is licensed under Creative Commons
+    Attribution (http://creativecommons.org/licenses/by/4.0/).
+</footer>
+</html>
