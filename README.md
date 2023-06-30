@@ -1,4 +1,5 @@
 # parkour 
+![preview](./public/preview.png)
 
 ## [DEMO](https://cdn.kerrycao.com/side-projects/parkour/)
 

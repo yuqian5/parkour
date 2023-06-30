@@ -3,9 +3,37 @@
 <head>
     <meta charset="utf-8">
     <title>Parkour?</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <script src="/js/main.js" type="module"></script>
     <script src="https://kit.fontawesome.com/48728bdfb2.js" crossorigin="anonymous"></script>
+
+    <!-- Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffa112">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Primary Meta Tags -->
+    <title>Parkour?</title>
+    <meta name="title" content="Parkour?" />
+    <meta name="description" content="A cool Three.JS learner project that allows players to run around and explore a virtual parkour map." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cdn.kerrycao.com/side-projects/parkour/" />
+    <meta property="og:title" content="Parkour?" />
+    <meta property="og:description" content="A cool Three.JS learner project that allows players to run around and explore a virtual parkour map." />
+    <meta property="og:image" content="https://cdn.kerrycao.com/side-projects/parkour/preview.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://cdn.kerrycao.com/side-projects/parkour/" />
+    <meta property="twitter:title" content="Parkour?" />
+    <meta property="twitter:description" content="A cool Three.JS learner project that allows players to run around and explore a virtual parkour map." />
+    <meta property="twitter:image" content="https://cdn.kerrycao.com/side-projects/parkour/preview.png" />
 </head>
 <body>
 <div class="absolute left-1 top-1">
@@ -16,11 +44,13 @@
 <div id="menuPanel" class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
     <button class="btn text-2xl hover:font-bold font-mono" id="startButton">Click to Start</button>
 </div>
-<div class="absolute bottom-1 right-2 text-white font-mono">
-    Future Plans: Ammo.JS
-</div>
 <div class="absolute bottom-1 left-2 text-white font-mono">
-    Three.JS + Ray Cast
+    <a href="https://github.com/yuqian5/parkour" class="underline">GitHub</a> &
+    <a href="https://skfb.ly/oGypy" class="underline">Model by Space_One</a>
+    <p style="display:none;">"LOWPOLY | FPS | TDM | GAME | MAP" (https://skfb.ly/oGypy) by Space_One is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).</p>
+</div>
+<div class="absolute bottom-1 right-2 text-white font-mono">
+    Three.JS with Ray Casting
 </div>
 <div class="absolute bottom-1 left-1/2 -translate-x-1/2 text-white font-mono">
     Copyright © 2022-2023 by <a href="https://kerrycao.com" class="underline">Kerry Cao</a> | All Rights Reserved
@@ -32,8 +62,4 @@
     Click ESC to pause
 </div>
 </body>
-<footer style="display: none">
-    "LOWPOLY | FPS | TDM | GAME | MAP" (https://skfb.ly/oGypy) by Space_One is licensed under Creative Commons
-    Attribution (http://creativecommons.org/licenses/by/4.0/).
-</footer>
 </html>

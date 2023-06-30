@@ -38,9 +38,12 @@ const states = {
 // endregion
 
 // region lights
-const hemLight = new THREE.HemisphereLight(0xeeeeff, 0x777788, 0.75);
-hemLight.position.set(0.5, 1, 0.75);
-scene.add(hemLight);
+const hemLight1 = new THREE.HemisphereLight(0xeeeeff, 0x777788, 0.75);
+hemLight1.position.set(0.5, 1, 0.75);
+scene.add(hemLight1);
+const hemLight2 = new THREE.HemisphereLight(0xeeeeff, 0x777788, 0.75);
+hemLight2.position.set(-0.5, 1, -0.75);
+scene.add(hemLight2);
 const ambientLight = new THREE.AmbientLight(0xcccccc, 0.3);
 scene.add(ambientLight);
 const pointLight = new THREE.PointLight(0xffffff, 1, 10000);
@@ -321,7 +324,7 @@ function animate() {
     }
 }
 
-function start() {
+function startGame() {
     registerKeyboardControl();
     animate();
 }
@@ -330,7 +333,7 @@ function loadMap() {
     // Load a glTF resource
     loader.load(
         // resource URL
-        'scene.gltf',
+        '/model/scene.gltf',
         // called when the resource is loaded
         function (gltf) {
             if (gltf.animations[0] !== undefined) {
@@ -342,7 +345,7 @@ function loadMap() {
             let map = gltf.scene
             scene.add(map);
 
-            start();
+            startGame();
         },
         // called while loading is progressing
         function (xhr) {
